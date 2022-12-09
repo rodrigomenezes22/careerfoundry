@@ -6,4 +6,4 @@ I was able to use the API for the IP, but my monthly usage expired. It worked fo
 
 The files can be downloaded and tested locally. 
 
-I did not worried about Responsive Design.. So I would view on Desktop only.
+I did not worried about Responsive Design. So I would view on Desktop only.
