@@ -41,6 +41,7 @@ function getIP(json) {
 }   
 
 // Call the function to assign currency.
+// I created this to test the global variable.
 function displayCurrency(currency) {
     console.log("the currency is " + currency);
 }
@@ -86,13 +87,6 @@ async function getCourses() {
 
 }
 
-
-
-
-// set endpoint and your access key
-
-
-
 // Function called after clicking on More info Button to display courses data.
 async function getInfo(slug) {
 
@@ -101,7 +95,7 @@ async function getInfo(slug) {
     const detailCourse = await fetch(newUrl + slug);
     const details = await detailCourse.json();
 
-    console.log(details);
+    // console.log(details);
 
     const courseDesc = details.description;
     // Check for currency
@@ -112,7 +106,7 @@ async function getInfo(slug) {
     }
 
     // Add starting Dates in separated divs
-    console.log(slug);
+    // console.log(slug);
 
     var datesContainer = document.querySelector('.' + slug);
     datesContainer.innerHTML = "";
