@@ -116,7 +116,7 @@ async function getInfo(slug) {
             dateStart = details.start_dates[i];
             // Converting Date
             dateStart = dateStart.split('-').map(e => e[0] == '0' ? e.slice(1) : e);
-            dateStart = dateStart[1] + '/' + dateStart[2] + '/' + dateStart[0];
+            dateStart = dateStart[2] + '/' + dateStart[1] + '/' + dateStart[0];
             divDate = document.createElement('span');
             divDate.className = "dates";
             divDate.innerHTML += dateStart;
