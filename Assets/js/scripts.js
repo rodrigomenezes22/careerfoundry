@@ -11,6 +11,7 @@ $.ajax({
     }
 })
 
+// Declaring global variable to be used later.
 currency = "";
 
 function getIP(json) {
