@@ -1,0 +1,108 @@
+* 
+    padding: 0px;
+    margin: 0px;
+
+
+$white = #ffffff
+
+$dark_bg = #223c50
+
+$green_menu = #7a8a96
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,700;1,400&display=swap');
+
+html 
+    background-color: $dark_bg; 
+
+body 
+    background-color: $dark_bg; 
+
+
+.Bebas 
+    font-family: 'Bebas Neue', cursive;
+
+.navbar 
+    background-color: transparent
+    .navbar-item, .navbar-link 
+        color: $white
+
+        &:hover 
+            background-color: $green_menu
+            color: $white
+
+
+.background-image 
+    background: url('https://images.careerfoundry.com/public/frontpages/homepage/Asena_hero_cut_out_744x588_v2.png')
+    background-position: right 100px
+    background-repeat: no-repeat 
+    background-size: 500px
+    background-color: $dark_bg
+
+
+.h1 
+    font-size: 60px
+
+.h2
+    font-size: 35px
+
+.h4 
+    font-size: 22px
+
+.course__title
+    font-size: 30px
+    font-family: 'Bebas Neue', cursive;
+    color: $dark_bg
+
+
+.sub__title
+    display: none;
+
+.button
+    &.is-primary
+        background: transparent
+        border: 2px solid $dark_bg
+        border-radius: 5px
+        color: $dark_bg
+        margin: 1rem 0
+        transition: background .7s, color .7s
+        &:hover, &:active, &:focus
+            background: $dark_bg
+            color: $white
+
+
+p 
+    font-size: 16px
+
+.font_white 
+    color: $white;
+
+.card
+    margin: 1rem
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3)
+
+.more-details 
+    display: none;
+
+.more-details 
+    div:nth-of-type(2)
+        display: flex 
+        flex-direction: row
+
+.dates 
+    background-color: $dark_bg
+    color: $white
+    border-radius: 5px
+    margin: .5rem .5rem .5rem 0px
+    padding: .5rem
+    height: 35px
+
+.price 
+    background-color: lightgreen
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    width: 95px;
+    padding: .75rem;
+    border-radius: 5px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;

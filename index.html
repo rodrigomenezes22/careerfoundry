@@ -4,11 +4,98 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/Assets/css/bulma.min.css" rel="stylesheet">
         <link href="/Assets/css/styles.css" rel="stylesheet">
-        <script href="/Assets/js/custom.js" />
+        <!-- <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
+        <script src="/Assets/js/scripts.js" defer></script>
+
     </head>
-    <body>
-    <h1>Testing HTML</h1>
-    <p>Testing agian</p>
+    <body class="background-image">
+    <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://careerfoundry.com">
+                <img src="/Assets/images/cf_logo_min_full.svg" width="191" height="23" alt="Logo Career Foundry">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a class="navbar-item">
+                    Courses
+                </a>
+
+                <a class="navbar-item">
+                    Learn with us
+                </a>
+
+                <a class="navbar-item">
+                    Our Graduates
+                </a>
+
+                <a class="navbar-item">
+                    Online Events
+                </a>
+
+                <a class="navbar-item">
+                    Blog
+                </a>
+            </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+            <div class="container">
+                <h1 class="h1 Bebas font_white">Welcome to Career Foundry</h1>
+                <p class="font_white h2 Bebas">Our Courses</p> <br>
+            </div>
+            <div class="container">
+            <section id="course_section" class="columns is-multiline is-mobile"></section>
+
+            <template id="course__template">
+                <div class="course card column is-6-desktop">
+                    <h2 class="course__title"></h2>
+                    <h3 class="sub__title"></h3>
+                    <p><b>Next Starting Date:</b></p>
+                    <span class="start__date"></span>
+                    <div class="more_info"></div>
+                    <div class="details"></div>
+                    <!-- Display after click  -->
+                    <div class="more-details">
+                        <p><b>Course Description:</b></p>
+                        <div class="description"></div> <br>
+                        <p><b>Available Starting Dates:</b></p>
+                        <div class="starting-dates"></div> <br>
+                         <p><b>Investment:</b></p>
+                        <div class="price"></div>
+                    </div>
+                </div>
+            </template>
+            </div>
+        
+    <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+
+
+  
     </body>
 </html>
